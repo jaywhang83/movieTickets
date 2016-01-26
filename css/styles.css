@@ -1,15 +1,6 @@
-/*#show-contact {
+.view {
   display: none;
 }
-
-.contacts {
-  cursor: pointer;
-  color: #0088cc;
-}
-
-.contacts:hover {
-  text-decoration: underline;
-}*/
 
 select {
   font-size: 2em;
@@ -17,6 +8,14 @@ select {
 .selections {
   position: absolute;
   top: 25%;
+  left: 15%;
+  width: 100%;
+  padding: 20px;
+}
+
+.view {
+  position: absolute;
+  top: 35%;
   left: 15%;
   width: 100%;
   padding: 20px;
