@@ -5,66 +5,40 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-1.12.0.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Address book</title>
+    <title>Movie Tickets</title>
   </head>
   <body>
     <div class="container">
-      <h1>Address book</h1>
+      <!--<img src="reel.jpg" alt="Image of a Movie reel">-->
+      <div class="selections">
+      <form id="movieName">
+        <label for="movieChoice"><h4>Movie: </h4></label>
+        <select id="movieChoice">
+          <option value="starwars">Star Wars</option>
+          <option value="zoolander2">Zoolander 2</option>
+          <option value="creed">Creed</option>
+        </select>
+        <label for="timeChoice"><h4>Time: </h4></label>
+        <select id="timeChoice">
+          <option value="12pm">12pm</option>
+          <option value="4pm">4pm</option>
+          <option value="8pm">8pm</option>
+        </select>
+        <label for="ageChoice"><h4>Child under 12, Senior over 59: </h4></label>
+        <select id="ageChoice">
+          <option value="child">Child</option>
+          <option value="adult">Adult</option>
+          <option value="senior">Senior</option>
+        </select>
 
-      <div class="row">
-        <div class="col-md-6">
-          <h2>Add a contact:</h2>
-          <form id="new-contact">
-            <div class="form-group">
-              <label for="new-first-name">First name</label>
-              <input type="text" class="form-control" id="new-first-name">
-            </div>
-            <div class="form-group">
-              <label for="new-last-name">Last name</label>
-              <input type="text" class="form-control" id="new-last-name">
-            </div>
 
-            <div id="new-addresses">
-              <div class="new-address">
-                <div class="form-group">
-                  <label for="new-street">Street</label>
-                  <input type="text" class="form-control new-street">
-                </div>
-                <div class="form-group">
-                  <label for="new-city">City</label>
-                  <input type="text" class="form-control new-city">
-                </div>
-                <div class="form-group">
-                  <label for="new-state">State</label>
-                  <input type="text" class="form-control new-state">
-                </div>
-              </div>
-            </div>
+        <button type="submit" class="btn btn-danger">Buy Tickets</button>
 
-            <span class="btn btn-primary" id="add-address">Another address</span>
-
-            <button type="submit" class="btn btn-success">Add</button>
-          </form>
-
-          <h2>Contacts:</h2>
-          <ul id="contacts">
-
-          </ul>
-        </div>
-
-        <div class="col-md-6 contact">
-          <div id="show-contact">
-            <h2></h2>
-            <p>First name: <span class="first-name"></span></p>
-            <p>Last name: <span class="last-name"></span></p>
-            <p>Addresses:</p>
-            <ul id="addresses">
-
-            </ul>
-          </div>
-        </div>
-      </div>
+      </form>
     </div>
-
+    <div class= "view">
+      <p>Tickets price for: <span class = "result"></span></p>
+    </div>
+    </div>
   </body>
 </html>
